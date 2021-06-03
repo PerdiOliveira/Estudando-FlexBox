@@ -46,6 +46,23 @@ usar o caniuse.com*/
     width: 20%;
 }
 
+.videoSobre .container{
+    display: flex;
+}
+.videoSobre-sobre{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.videoSobre-sobre-list{
+    flex-grow: 1;
+}
+
+.videoSobre-sobre-video{
+    flex-grow: 2;
+}
 /*parte mobile*/
 
 @media screen and (max-width: 480px){
@@ -73,7 +90,17 @@ usar o caniuse.com*/
     .rodapePrincipal-patrocinadores-list{
         margin: 0;
         width: 100%;
-        justify-content: space-between; /*distribui o espaço em branco em volta do elemento*/
+        justify-content: space-between; /*distribui o espaço entre o elemento*/
+    }
+    .cabecalhoPrincipal-nav-link-app{
+        order: -1;
+    }
+    .videoSobre .container{
+        flex-direction: column;
+
+    }
+    .videoSobre-video {
+        margin: 0 auto;
     }
 }
 
